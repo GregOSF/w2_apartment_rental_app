@@ -1,15 +1,17 @@
 function Property(address) {
   // set address
-
+  this.address = address;
   this.units = [];
 }
 
 Property.prototype.setManager = function(manager) {
   // set property manager
+  this.manager = manager;
 };
 
 Property.prototype.getManager = function() {
   // return property manager
+  this.manager;
 };
 
 Property.prototype.addTenant = function(unit, tenant) {
@@ -19,7 +21,7 @@ Property.prototype.addTenant = function(unit, tenant) {
 
 Property.prototype.removeTenant = function(unit, tenant) {
   // remove tenant from unit
-};
+}; 
 
 Property.prototype.availableUnits = function(){
   // return num of units available
